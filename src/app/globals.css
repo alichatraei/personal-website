@@ -1,3 +1,5 @@
+@import url('/public/fonts/GT-Walsheim-Pro/style.css');
+@import url('/public/fonts/Inter/style.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +20,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: "GT Walsheim Pro";
   background: linear-gradient(
       to bottom,
       transparent,
