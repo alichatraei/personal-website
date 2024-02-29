@@ -8,12 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-     fontFamily:{
-      gtWalshiem:['var(--font-gt-walshiem-pro)'],
-      inter:['var(--font-inter)']
-     }
+      fontFamily: {
+        gtWalshiem: ["var(--font-gt-walshiem-pro)"],
+        inter: ["var(--font-inter)"],
+      },
+      backgroundImage:{
+        "linear-gradient": "linear-gradient(89.81deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%)"
+      }
+      
     },
   },
-  plugins: [],
+  plugins: [
+  require("daisyui"),
+  ],
 };
 export default config;
