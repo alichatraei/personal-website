@@ -1,6 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Link from "next/link";
-import PersonalImage from 'public/images/alichatraei.png'
 const Introduce = () => {
   return (
     <div className="container w-full mx-auto flex text-white calc-vh-minus-header items-center">
@@ -21,7 +21,7 @@ const Introduce = () => {
         <span className="text-2xl cursor-pointer font-extralight w-fit"><Link href="mailto:alichatraei@yahoo.com">Say Hi &#8594;</Link></span>
       </div>
       <div className="lg:flex flex-1 items-center justify-center hidden">
-        <Image alt="Alichatraei-photo" src={PersonalImage} width={500} height={500} className="md:w-80 lg:w-96 xl:w-[500px] rounded-b-full" />
+        <Image alt="Alichatraei-photo" src="/images/alichatraei.png" width={500} height={500} className="md:w-80 lg:w-96 xl:w-[500px] rounded-b-full" />
       </div>
     </div>
   );
