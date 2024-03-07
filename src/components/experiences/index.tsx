@@ -30,12 +30,11 @@ const Experiences = () => {
   return (
     <div className="container w-full mx-4 lg:mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4">
       <span className="w-fit text-sm lg:text-lg uppercase">Experiences</span>
-      <div role="tablist" className="tabs ">
         <Tabs>
           {experiencesMock.map((experience, index: number) => (
             <Tabs.RadioTab
               key={index++}
-              className={`tab text-white px-0 !w-24 lg:!w-32 rounded-t-sm text-sm lg:text-lg ${
+              className={`text-white px-0 !w-24 lg:!w-32 rounded-t-sm text-sm lg:text-lg ${
                 activeTab === experience.name
                   ? "bg-zinc-700 text-[#F0F0F0]"
                   : "text-[#C4C4C4] bg-transparent"
@@ -44,11 +43,11 @@ const Experiences = () => {
               defaultChecked={experience.name === "tab1_fanap"}
               label={experience.label}
               onClick={handleChangeTab}
-              contentClassName="py-6 w-fit h-[450px]"
+              contentClassName="tab-content py-6 w-fit h-[450px]"
             >
               {experience.name === activeTab ? (
                 <>
-                  <div className="grid grid-cols-2 gap-y-1 lg:gap-y-0 w-full justify-between text-white">
+                  <div className="grid grid-cols-2 gap-y-1 lg:gap-y-0  justify-between text-white">
                     <span className="w-fit col-span-2 lg:col-span-1 text-sm lg:text-2xl font-light">
                       {experience.jobTitle}
                     </span>
@@ -73,7 +72,6 @@ const Experiences = () => {
             </Tabs.RadioTab>
           ))}
         </Tabs>
-      </div>
     </div>
   );
 };
