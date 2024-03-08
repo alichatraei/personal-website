@@ -28,7 +28,7 @@ const Experiences = () => {
   };
 
   return (
-    <div className="container w-full mx-4 lg:mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4">
+    <div className="container w-full mx-4 lg:mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4 border-b-white border-b-2">
       <span className="w-fit text-sm lg:text-lg uppercase">Experiences</span>
         <Tabs>
           {experiencesMock.map((experience, index: number) => (
@@ -43,7 +43,7 @@ const Experiences = () => {
               defaultChecked={experience.name === "tab1_fanap"}
               label={experience.label}
               onClick={handleChangeTab}
-              contentClassName="tab-content py-6 w-fit h-[450px]"
+              contentClassName="tab-content py-6 w-fit h-[500px]"
             >
               {experience.name === activeTab ? (
                 <>
