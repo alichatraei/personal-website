@@ -28,7 +28,7 @@ const Experiences = () => {
   };
 
   return (
-    <div className="container w-full mx-4 lg:mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4 border-b-white border-b-2">
+    <div className="container w-full mx-auto px-4 lg:px-0 lg:mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4">
       <span className="w-fit text-sm lg:text-lg uppercase">Experiences</span>
         <Tabs>
           {experiencesMock.map((experience, index: number) => (
@@ -64,7 +64,7 @@ const Experiences = () => {
                       {experience.companyName}
                     </Link>
                   </div>
-                  <div className="flex flex-col text-white text-justify text-xs lg:text-sm lg:leading-8 pr-4 lg:pr-0 w-full lg:w-5/6 lg:px-0 font-light">
+                  <div className="flex flex-col text-white text-justify text-xs lg:text-sm lg:leading-8 lg:pr-0 w-full lg:w-5/6 lg:px-0 font-light">
                     {HtmlReactParser(experience.description)}
                   </div>
                 </>
@@ -72,6 +72,7 @@ const Experiences = () => {
             </Tabs.RadioTab>
           ))}
         </Tabs>
+        <hr className="w-full" />
     </div>
   );
 };
