@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div className="container w-full px-4 mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4">
+    <section id="projects" className="container w-full px-4 mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4">
       <span className="w-fit font-inter text-sm lg:text-lg uppercase mt-24">
         Featured projects
       </span>
@@ -48,7 +48,8 @@ const Projects = () => {
           </Card>
         ))}
       </div>
-    </div>
+      <hr className="w-full mt-6" />
+    </section>
   );
 };
 

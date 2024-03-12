@@ -1,3 +1,4 @@
+import Contact from "@/components/contact/Contact";
 import Experiences from "@/components/experiences";
 import Header from "@/components/header";
 import Introduce from "@/components/introduce";
@@ -9,6 +10,7 @@ export default function Home() {
      <Introduce/>
      <Experiences/>
      <Projects/>
+     <Contact/>
     </main>
   );
 }

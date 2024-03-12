@@ -28,7 +28,7 @@ const Experiences = () => {
   };
 
   return (
-    <div className="container w-full mx-auto px-4 lg:px-0 lg:mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4">
+    <section id="experiences" className="container w-full mx-auto px-4 lg:px-0 lg:mx-auto flex flex-col text-white min-h-screen justify-center gap-y-4">
       <span className="w-fit text-sm lg:text-lg uppercase">Experiences</span>
         <Tabs>
           {experiencesMock.map((experience, index: number) => (
@@ -73,7 +73,7 @@ const Experiences = () => {
           ))}
         </Tabs>
         <hr className="w-full" />
-    </div>
+    </section>
   );
 };
 
